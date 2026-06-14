@@ -62,19 +62,19 @@ function Footer() {
 
           <div className="social-icons">
 
-            <a href="/">
+            <a href="/facebook">
               <FaFacebookF />
             </a>
 
-            <a href="/">
+            <a href="/instagram">
               <FaInstagram />
             </a>
 
-            <a href="/">
+            <a href="/youtube">
               <FaYoutube />
             </a>
 
-            <a href="/">
+            <a href="/linkedin">
               <FaLinkedinIn />
             </a>
 
