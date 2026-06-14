@@ -149,7 +149,7 @@ function Donate() {
             transform lives through God’s Word.
           </p>
 
-          <a href="/" className="support-btn">
+          <a href="/donate" className="support-btn">
             Become A Partner
           </a>
 
