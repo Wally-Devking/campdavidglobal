@@ -92,13 +92,12 @@ function Donate() {
                 Support from anywhere in the world through PayPal,
                 Wise, or international transfers.
               </p>
-
-              <a
-                href=""
-                className="donate-btn"
-              >
-                Give Internationally
-              </a>
+<button
+  className="donate-btn"
+  type="button"
+>
+  Give Internationally
+</button>
 
             </div>
 
