@@ -1,0 +1,108 @@
+/* HOME CONTACT SECTION */
+
+.home-contact {
+  padding: 50px;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.55)
+    ),
+    url("/public/assets/hands.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-contact-overlay {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+
+.home-contact h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 50px;
+  color: #f2f2f2;
+}
+
+/* FORM */
+
+.home-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home-contact-form input,
+.home-contact-form textarea {
+  width: 100%;
+  padding: 18px 22px;
+  border: none;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.37);
+  color: #222121;
+  font-size: 1rem;
+  backdrop-filter: blur(8px);
+  outline: none;
+  transition: 0.4s ease;
+}
+
+.home-contact-form input::placeholder,
+.home-contact-form textarea::placeholder {
+  color: rgba(255,255,255,0.75);
+}
+
+.home-contact-form input:focus,
+.home-contact-form textarea:focus {
+  background: rgba(255, 255, 255, 0.78);
+  transform: translateY(-2px);
+}
+
+/* BUTTON */
+
+.home-contact-form button {
+    
+  padding: 18px ;
+  border: none;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #111;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s ease;
+  justify-content: center;
+}
+
+.home-contact-form button:hover {
+  background: #252424;
+  transform: translateY(-3px);
+  color: #fff;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .home-contact {
+    padding: 80px 5%;
+  }
+
+  .home-contact h2 {
+    font-size: 2.4rem;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,87 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  padding: 10px 0;
+}
+
+/* transparent at top */
+.navbar {
+  background: transparent;
+}
+
+.donate-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  color: #111 !important;
+
+  padding: 12px 26px;
+  border-radius: 50px;
+
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: 0.4s ease;
+}
+
+.donate-nav-btn:hover {
+  background: #000000;
+  transform: translateY(-2px);
+  color: #fff !important; 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* dark on scroll */
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(8px);
+}
+
+/* layout */
+.nav-main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 35px 50px;
+}
+
+/* CENTER LOGO ABSOLUTELY */
+.nav-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* RIGHT SIDE LINKS */
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+
+/* APPLY BUTTON */
+.apply-btn {
+  border: 1px solid white;
+  padding: 10px 18px;
+}

@@ -1,0 +1,163 @@
+/* DTSSection.css */
+
+.dts-section {
+  padding: 60px 8%;
+  background: #ffffff;
+}
+
+.dts-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+/* LEFT CARD */
+.dts-card {
+  position: relative;
+  width: 450px;
+  height: 500px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.dts-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.dts-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  color: #fff;
+}
+
+.dts-overlay h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.dts-overlay p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* RIGHT CONTENT */
+.dts-content {
+  flex: 1;
+  max-width: 650px;
+}
+
+.dts-content h2 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #0a0a1a;
+  margin-bottom: 30px;
+}
+
+.dts-content p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #333;
+  margin-bottom: 35px;
+}
+
+/* BUTTON */
+.see-more-btn {
+  display: inline-block;
+  padding: 14px 34px;
+  background: #0a0a1a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background: #1c1c2c;
+  transform: translateY(-2px);
+}
+
+/* LEFT CARD */
+.dts-card {
+  position: relative;
+  width: 450px;
+  height: 500px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+.dts-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+/* HOVER EFFECT */
+.dts-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+}
+
+.dts-card:hover img {
+  transform: scale(1.06);
+}
+.dts-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(41, 41, 41, 0.28),
+    rgba(206, 203, 203, 0.05)
+  );
+  z-index: 1;
+}
+
+.dts-overlay {
+  z-index: 2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .dts-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dts-card {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .dts-content h2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .dts-section {
+    padding: 70px 5%;
+  }
+
+  .dts-content h2 {
+    font-size: 2.1rem;
+  }
+
+  .dts-overlay h3 {
+    font-size: 2rem;
+  }
+}

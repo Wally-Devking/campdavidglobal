@@ -1,0 +1,176 @@
+/* CONTACT PAGE */
+
+.contact-section {
+  padding: 100px;
+  background: #f1eded;
+  min-height: 100vh;
+}
+
+/* CONTACT HERO */
+
+.contact-hero {
+  height: 60vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.75),
+      rgba(0,0,0,0.55)
+    ),
+    url("/public/assets/hands.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 8%;
+}
+
+/* HEADER */
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-subtitle {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.contact-header h1 {
+  font-size: 4rem;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.contact-text {
+  margin: auto;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+/* CONTAINER */
+
+.contact-container {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+
+.contact-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info-card {
+  background: #ffffff;
+  padding: 5px 35px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.0);
+  transition: 0.4s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+}
+
+.info-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.info-card p {
+  color: #666;
+    font-size: 1.3rem;
+
+  
+}
+
+/* FORM */
+
+.contact-form {
+  flex: 1.2;
+  background: #fff;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.05);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 18px 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+  background: #fafafa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #b08968;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(176, 137, 104, 0.1);
+}
+
+/* BUTTON */
+
+.contact-btn {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  border-radius: 50px;
+  background: #1f1f1f;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.contact-btn:hover {
+  background: #333;
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+  .contact-header h1 {
+    font-size: 2.8rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .contact-section {
+    padding: 70px 5%;
+  }
+
+  .contact-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-form {
+    padding: 35px 25px;
+  }
+}
