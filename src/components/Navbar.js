@@ -20,11 +20,13 @@ function Navbar() {
       <div className="nav-main">
 
         {/* CENTER LOGO */}
-   <a
-  href="/"
-  className="nav-logo"
-  style={{ backgroundImage: "url('/assets/logoDavid.png')" }}
-></a>
+<a href="/" className="nav-logo" aria-label="Camp David Global Home">
+  <img
+    src="/assets/logoDavid.png"
+    alt="Camp David Global Logo"
+    className="nav-logo-img"
+  />
+</a>
 
         {/* RIGHT LINKS */}
         <div className="nav-right">
