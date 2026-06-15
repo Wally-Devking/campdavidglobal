@@ -174,3 +174,164 @@
     padding: 35px 25px;
   }
 }
+
+/* ====================================
+   TABLET
+==================================== */
+
+@media (max-width: 992px) {
+
+  .contact-section {
+    padding: 80px 40px;
+  }
+
+  .contact-hero {
+    height: auto;
+    min-height: 50vh;
+    padding: 120px 40px 80px;
+  }
+
+  .contact-header h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form {
+    padding: 40px;
+  }
+}
+
+/* ====================================
+   MOBILE
+==================================== */
+
+@media (max-width: 768px) {
+
+  .contact-section {
+    padding: 60px 20px;
+  }
+
+  .contact-hero {
+    min-height: 45vh;
+    padding: 120px 20px 60px;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+  }
+
+  .contact-text {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .contact-container {
+    gap: 25px;
+  }
+
+  .info-card {
+    padding: 25px 20px;
+    border-radius: 20px;
+  }
+
+  .info-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .info-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+    word-break: break-word;
+  }
+
+  .contact-form {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 16px;
+    font-size: 0.95rem;
+  }
+
+  .contact-btn {
+    padding: 16px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ====================================
+   SMALL PHONES
+==================================== */
+
+@media (max-width: 480px) {
+
+  .contact-section {
+    padding: 50px 15px;
+  }
+
+  .contact-hero {
+    min-height: 40vh;
+    padding: 100px 15px 50px;
+  }
+
+  .contact-header h1 {
+    font-size: 1.9rem;
+  }
+
+  .contact-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .contact-text {
+    font-size: 0.9rem;
+  }
+
+  .info-card {
+    padding: 20px 15px;
+  }
+
+  .info-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .info-card p {
+    font-size: 0.95rem;
+  }
+
+  .contact-form {
+    padding: 25px 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 14px;
+    font-size: 0.9rem;
+  }
+
+  .contact-btn {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
