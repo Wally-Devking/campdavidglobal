@@ -1,28 +1,29 @@
-/* =====================================
+/* ===================================
    ABOUT PAGE
-===================================== */
+=================================== */
 
 .about-page {
+  background: #fafafa;
   overflow-x: hidden;
-  background: #f8f8f8;
 }
 
-/* =====================================
+/* ===================================
    HERO
-===================================== */
+=================================== */
 
 .about-hero {
-  min-height: 75vh;
+  min-height: 80vh;
 
   background:
     linear-gradient(
-      rgba(0,0,0,.55),
-      rgba(0,0,0,.55)
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
     ),
     url("/assets/hands.jpg");
 
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 
   display: flex;
   align-items: center;
@@ -38,24 +39,22 @@
 }
 
 .about-overlay h1 {
-  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-size: clamp(2.5rem, 7vw, 5rem);
   color: #fff;
-  font-weight: 800;
   line-height: 1.1;
+  font-weight: 800;
   margin-bottom: 25px;
 }
 
 .about-overlay p {
-  font-size: clamp(1rem, 2vw, 1.35rem);
   color: rgba(255,255,255,.9);
-  max-width: 700px;
-  margin: auto;
+  font-size: clamp(1rem, 2vw, 1.3rem);
   line-height: 1.8;
 }
 
-/* =====================================
-   WHO WE ARE
-===================================== */
+/* ===================================
+   ABOUT CONTENT
+=================================== */
 
 .about-content {
   padding: 100px 8%;
@@ -64,29 +63,31 @@
 .about-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 70px;
   align-items: center;
 }
 
 .about-text h2 {
   font-size: clamp(2rem, 4vw, 3.5rem);
   color: #111;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .about-text p {
+  color: #666;
   font-size: 1.05rem;
   line-height: 2;
-  color: #666;
   margin-bottom: 20px;
 }
 
 .about-image img {
   width: 100%;
+  display: block;
+
   border-radius: 30px;
 
   box-shadow:
-    0 20px 60px rgba(0,0,0,.08);
+    0 20px 50px rgba(0,0,0,.08);
 
   transition: .5s ease;
 }
@@ -95,31 +96,36 @@
   transform: scale(1.03);
 }
 
-/* =====================================
+/* ===================================
    MISSION & VISION
-===================================== */
+=================================== */
 
 .mission-vision {
   padding: 0 8% 100px;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 35px;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
 }
 
 .mv-card {
-  background: white;
+  background: #fff;
+
   padding: 50px;
-  border-radius: 30px;
+
+  border-radius: 28px;
 
   box-shadow:
-    0 10px 40px rgba(0,0,0,.05);
+    0 10px 35px rgba(0,0,0,.05);
 
   transition: .4s ease;
 }
 
 .mv-card:hover {
   transform: translateY(-10px);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.08);
 }
 
 .mv-card h2 {
@@ -133,142 +139,9 @@
   line-height: 2;
 }
 
-/* =====================================
-   CORE VALUES
-===================================== */
-
-.core-values {
-  padding: 100px 8%;
-  background: #fff;
-  text-align: center;
-}
-
-.core-values h2 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  margin-bottom: 60px;
-}
-
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-}
-
-.value-card {
-  background: #f8f9fb;
-
-  padding: 40px 30px;
-  border-radius: 24px;
-
-  transition: .4s ease;
-
-  box-shadow:
-    0 10px 30px rgba(0,0,0,.04);
-}
-
-.value-card:hover {
-  transform: translateY(-10px);
-
-  background: white;
-
-  box-shadow:
-    0 20px 50px rgba(0,0,0,.08);
-}
-
-.value-card h3 {
-  margin-bottom: 15px;
-  color: #111;
-}
-
-.value-card p {
-  color: #666;
-  line-height: 1.8;
-}
-
-/* =====================================
-   WHY CAMPDAVID
-===================================== */
-
-.why-campdavid {
-  padding: 100px 8%;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-
-  align-items: center;
-
-  background: #eef7fc;
-}
-
-.why-content h2 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  margin-bottom: 35px;
-}
-
-.why-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.why-content li {
-  margin-bottom: 20px;
-  font-size: 1.1rem;
-  color: #555;
-}
-
-.why-image img {
-  width: 100%;
-  border-radius: 30px;
-
-  box-shadow:
-    0 20px 60px rgba(0,0,0,.08);
-
-  transition: .4s ease;
-}
-
-.why-image img:hover {
-  transform: scale(1.03);
-}
-
-/* =====================================
-   STATS
-===================================== */
-
-.stats-section {
-  padding: 100px 8%;
-
-  background:
-    linear-gradient(
-      135deg,
-      #0b1117,
-      #18242f
-    );
-
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-
-  text-align: center;
-}
-
-.stat-box {
-  padding: 20px;
-}
-
-.stat-box h2 {
-  font-size: 4rem;
-  color: #83cbfa;
-}
-
-.stat-box p {
-  color: rgba(255,255,255,.8);
-  margin-top: 10px;
-}
-
-/* =====================================
+/* ===================================
    ADMISSIONS
-===================================== */
+=================================== */
 
 .admission-section {
   padding: 100px 8%;
@@ -278,100 +151,53 @@
 .admission-section h2 {
   font-size: clamp(2rem, 4vw, 3.5rem);
   margin-bottom: 25px;
+  color: #111;
 }
 
 .admission-section p {
   max-width: 850px;
-  margin: auto auto 20px;
+  margin: 0 auto 20px;
 
   color: #666;
   line-height: 2;
 }
 
-.steps-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+/* ===================================
+   STEPS
+=================================== */
 
-  margin-top: 60px;
+.steps-container {
+  margin-top: 70px;
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
 }
 
 .step-card {
   background: white;
 
   padding: 40px 30px;
-  border-radius: 24px;
+
+  border-radius: 25px;
 
   box-shadow:
-    0 10px 40px rgba(0,0,0,.05);
+    0 10px 30px rgba(0,0,0,.05);
 
   transition: .4s ease;
-}
 
-.step-card:hover {
-  transform: translateY(-10px);
-}
-
-.step-card span {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #83cbfa;
-}
-
-.step-card h3 {
-  margin: 20px 0;
-  color: #111;
-}
-
-.step-card p {
-  color: #666;
-}
-
-/* =====================================
-   APPLY BUTTON
-===================================== */
-
-.apply-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 50px;
-
-  padding: 18px 42px;
-
-  border-radius: 100px;
-
-  background: #111;
-  color: white;
-
-  text-decoration: none;
-  font-weight: 700;
-
-  transition: .4s ease;
-}
-
-.apply-btn:hover {
-  background: #83cbfa;
-  color: #111;
-
-  transform: translateY(-4px);
-}
-
-/* =====================================
-   PREMIUM CARD EFFECT
-===================================== */
-
-.mv-card,
-.step-card,
-.value-card {
   position: relative;
   overflow: hidden;
 }
 
-.mv-card::after,
-.step-card::after,
-.value-card::after {
+.step-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.08);
+}
+
+.step-card::after {
   content: "";
 
   position: absolute;
@@ -384,28 +210,75 @@
   background: linear-gradient(
     90deg,
     #83cbfa,
-    #4ba6e8,
-    #1c84d4
+    #4ba6e8
   );
 
   transform: scaleX(0);
   transition: .4s ease;
 }
 
-.mv-card:hover::after,
-.step-card:hover::after,
-.value-card:hover::after {
+.step-card:hover::after {
   transform: scaleX(1);
 }
 
-/* =====================================
+.step-card span {
+  display: block;
+
+  font-size: 3rem;
+  font-weight: 800;
+
+  color: #83cbfa;
+
+  margin-bottom: 15px;
+}
+
+.step-card h3 {
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.step-card p {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* ===================================
+   BUTTON
+=================================== */
+
+.apply-btn {
+  margin-top: 60px;
+
+  padding: 18px 45px;
+
+  border: none;
+  border-radius: 50px;
+
+  background: #111;
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: .4s ease;
+}
+
+.apply-btn:hover {
+  background: #83cbfa;
+  color: #111;
+
+  transform: translateY(-4px);
+}
+
+/* ===================================
    TABLET
-===================================== */
+=================================== */
 
 @media (max-width: 992px) {
 
-  .about-container,
-  .why-campdavid {
+  .about-container {
     grid-template-columns: 1fr;
   }
 
@@ -413,30 +286,23 @@
     grid-template-columns: 1fr;
   }
 
-  .values-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .stats-section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .steps-container {
     grid-template-columns: 1fr;
   }
+
+  .about-text {
+    text-align: center;
+  }
 }
 
-/* =====================================
+/* ===================================
    MOBILE
-===================================== */
+=================================== */
 
 @media (max-width: 768px) {
 
   .about-content,
-  .core-values,
-  .why-campdavid,
-  .admission-section,
-  .stats-section {
+  .admission-section {
     padding: 70px 20px;
   }
 
@@ -444,55 +310,51 @@
     padding: 0 20px 70px;
   }
 
-  .values-grid,
-  .stats-section {
-    grid-template-columns: 1fr;
+  .about-hero {
+    min-height: 65vh;
+  }
+
+  .about-overlay h1 {
+    font-size: 2.3rem;
+  }
+
+  .about-overlay p {
+    font-size: 1rem;
   }
 
   .mv-card,
-  .step-card,
-  .value-card {
+  .step-card {
     padding: 30px 25px;
   }
 
-  .stat-box h2 {
-    font-size: 3rem;
-  }
-
-  .why-content {
-    text-align: center;
+  .step-card span {
+    font-size: 2.5rem;
   }
 }
 
-/* =====================================
+/* ===================================
    SMALL PHONES
-===================================== */
+=================================== */
 
 @media (max-width: 480px) {
 
   .about-overlay h1 {
-    font-size: 2.2rem;
-  }
-
-  .about-overlay p {
-    font-size: .95rem;
+    font-size: 2rem;
   }
 
   .about-text h2,
-  .core-values h2,
-  .why-content h2,
   .admission-section h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .about-text p,
   .mv-card p,
-  .value-card p,
   .step-card p {
     font-size: .95rem;
   }
 
-  .stat-box h2 {
-    font-size: 2.5rem;
+  .apply-btn {
+    width: 100%;
+    max-width: 280px;
   }
 }
