@@ -1,194 +1,32 @@
-/* ABOUT PAGE */
-
-.about-page {
-  overflow-x: hidden;
-  background: #f8f8f8;
-}
-
-/* HERO */
-
-.about-hero {
-  height: 70vh;
-  background: linear-gradient(
-      rgba(0,0,0,0.55),
-      rgba(0,0,0,0.55)
-    ),
-    url("/public/assets/hands.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 40px 8%;
-}
-
-.about-overlay h1 {
-  font-size: 4.5rem;
-  color: #fff;
-  margin-bottom: 20px;
-  font-weight: 800;
-}
-
-.about-overlay p {
-  font-size: 1.3rem;
-  color: #f2f2f2;
-  margin: auto;
-}
-
-/* ABOUT CONTENT */
-
-.about-content {
-  padding: 10px 8%;
-}
-
-.about-container {
-  display: flex;
-  align-items: center;
-  gap: 80px;
-  flex-wrap: wrap;
-}
-
-.about-text {
-  flex: 1;
-}
-
-.about-text h2 {
-  font-size: 3rem;
-  color: #1e1e1e;
-  margin-bottom: 30px;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  line-height: 2;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.about-image {
-  flex: 1;
-}
-
-.about-image img {
-  width: 100%;
-  border-radius: 30px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-  transition: 0.5s ease;
-}
-
-.about-image img:hover {
-  transform: scale(1.03);
-}
-
-/* MISSION & VISION */
-
-.mission-vision {
-  padding: 60px 8%;
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.mv-card {
-  flex: 1;
-  background: #fff;
-  padding: 50px;
-  border-radius: 30px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.06);
-  transition: 0.4s ease;
-}
-
-.mv-card:hover {
-  transform: translateY(-10px);
-}
-
-.mv-card h2 {
-  font-size: 2.5rem;
-  margin-bottom: 25px;
-  color: #222;
-}
-
-.mv-card p {
-  font-size: 1.05rem;
-  line-height: 2;
-  color: #666;
-}
-
-/* ADMISSION */
-
-.admission-section {
-  padding: 10px 8%;
-  text-align: center;
-}
-
-.admission-section h2 {
-  font-size: 3.5rem;
-  margin-bottom: 30px;
-  color: #222;
-}
-
-.admission-section p {
-  font-size: 1rem;
-  color: #666;
-  margin: auto auto 20px;
-}
-
-.steps-container {
-  display: flex;
-  gap: 30px;
-  margin-top: 70px;
-  flex-wrap: wrap;
-}
-
-.step-card {
-  flex: 1;
-  background: #c5e0f4;
-  padding: 40px 30px;
-  border-radius: 25px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-.step-card span {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #fdfdfd;
-}
-
-.step-card h3 {
-  margin: 20px 0;
-  font-size: 1.6rem;
-}
-
-.step-card p {
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-.apply-btn {
-  margin-top: 60px;
-  padding: 16px 40px;
-  border: none;
-  border-radius: 50px;
-  background: #1f1f1f;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.4s ease;
-}
-
-.apply-btn:hover {
-  background: #333;
-  transform: translateY(-3px);
-}
-
-/* RESPONSIVE */
+/* ====================================
+   RESPONSIVE - TABLET
+==================================== */
 
 @media (max-width: 992px) {
 
+  .about-hero {
+    height: auto;
+    min-height: 60vh;
+    padding: 120px 40px 80px;
+  }
+
   .about-overlay h1 {
     font-size: 3rem;
+  }
+
+  .about-overlay p {
+    font-size: 1.1rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .about-text,
+  .about-image {
+    width: 100%;
   }
 
   .about-text h2,
@@ -198,30 +36,134 @@
 
   .mission-vision {
     flex-direction: column;
+    gap: 25px;
+  }
+
+  .mv-card {
+    width: 100%;
   }
 
   .steps-container {
     flex-direction: column;
+    gap: 20px;
+  }
+
+  .step-card {
+    width: 100%;
   }
 }
 
-@media (max-width: 600px) {
+/* ====================================
+   MOBILE
+==================================== */
+
+@media (max-width: 768px) {
 
   .about-hero {
-    height: 60vh;
+    min-height: 55vh;
+    padding: 120px 20px 60px;
   }
 
   .about-overlay h1 {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
+    line-height: 1.2;
   }
 
   .about-overlay p {
     font-size: 1rem;
+    line-height: 1.8;
   }
 
   .about-content,
   .mission-vision,
   .admission-section {
-    padding: 70px 5%;
+    padding: 60px 20px;
+  }
+
+  .about-text h2,
+  .admission-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .about-text p,
+  .mv-card p,
+  .step-card p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .mv-card {
+    padding: 35px 25px;
+  }
+
+  .mv-card h2 {
+    font-size: 2rem;
+  }
+
+  .step-card {
+    padding: 30px 25px;
+  }
+
+  .step-card span {
+    font-size: 2.5rem;
+  }
+
+  .step-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .apply-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* ====================================
+   SMALL PHONES
+==================================== */
+
+@media (max-width: 480px) {
+
+  .about-hero {
+    min-height: 50vh;
+  }
+
+  .about-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .about-overlay p {
+    font-size: 0.95rem;
+  }
+
+  .about-text h2,
+  .admission-section h2,
+  .mv-card h2 {
+    font-size: 1.7rem;
+  }
+
+  .about-text p,
+  .mv-card p,
+  .step-card p {
+    font-size: 0.95rem;
+  }
+
+  .about-image img {
+    border-radius: 20px;
+  }
+
+  .mv-card,
+  .step-card {
+    padding: 25px 20px;
+  }
+
+  .step-card span {
+    font-size: 2rem;
+  }
+
+  .apply-btn {
+    padding: 14px 30px;
+    font-size: 0.95rem;
   }
 }
