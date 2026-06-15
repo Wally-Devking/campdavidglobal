@@ -1,227 +1,264 @@
-/* ABOUT PAGE */
+/* =================================
+   CORE VALUES
+================================= */
 
-.about-page {
-  overflow-x: hidden;
-  background: #f8f8f8;
-}
-
-/* HERO */
-
-.about-hero {
-  height: 70vh;
-  background: linear-gradient(
-      rgba(0,0,0,0.55),
-      rgba(0,0,0,0.55)
-    ),
-    url("/public/assets/hands.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.core-values {
+  padding: 80px 8%;
   text-align: center;
-  padding: 40px 8%;
+  background: #ffffff;
 }
 
-.about-overlay h1 {
-  font-size: 4.5rem;
-  color: #fff;
-  margin-bottom: 20px;
-  font-weight: 800;
-}
-
-.about-overlay p {
-  font-size: 1.3rem;
-  color: #f2f2f2;
-  margin: auto;
-}
-
-/* ABOUT CONTENT */
-
-.about-content {
-  padding: 10px 8%;
-}
-
-.about-container {
-  display: flex;
-  align-items: center;
-  gap: 80px;
-  flex-wrap: wrap;
-}
-
-.about-text {
-  flex: 1;
-}
-
-.about-text h2 {
+.core-values h2 {
   font-size: 3rem;
-  color: #1e1e1e;
-  margin-bottom: 30px;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  line-height: 2;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.about-image {
-  flex: 1;
-}
-
-.about-image img {
-  width: 100%;
-  border-radius: 30px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-  transition: 0.5s ease;
-}
-
-.about-image img:hover {
-  transform: scale(1.03);
-}
-
-/* MISSION & VISION */
-
-.mission-vision {
-  padding: 60px 8%;
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.mv-card {
-  flex: 1;
-  background: #fff;
-  padding: 50px;
-  border-radius: 30px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.06);
-  transition: 0.4s ease;
-}
-
-.mv-card:hover {
-  transform: translateY(-10px);
-}
-
-.mv-card h2 {
-  font-size: 2.5rem;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   color: #222;
 }
 
-.mv-card p {
-  font-size: 1.05rem;
-  line-height: 2;
-  color: #666;
-}
-
-/* ADMISSION */
-
-.admission-section {
-  padding: 10px 8%;
-  text-align: center;
-}
-
-.admission-section h2 {
-  font-size: 3.5rem;
-  margin-bottom: 30px;
-  color: #222;
-}
-
-.admission-section p {
-  font-size: 1rem;
-  color: #666;
-  margin: auto auto 20px;
-}
-
-.steps-container {
-  display: flex;
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  margin-top: 70px;
-  flex-wrap: wrap;
 }
 
-.step-card {
-  flex: 1;
-  background: #c5e0f4;
-  padding: 40px 30px;
+.value-card {
+  background: #f8f8f8;
+  padding: 40px 25px;
   border-radius: 25px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
 }
 
-.step-card span {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #fdfdfd;
+.value-card:hover,
+.value-card:active {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
-.step-card h3 {
-  margin: 20px 0;
-  font-size: 1.6rem;
+.value-card h3 {
+  margin-bottom: 15px;
+  color: #222;
+  font-size: 1.4rem;
 }
 
-.step-card p {
-  font-size: 1rem;
+.value-card p {
+  color: #666;
   line-height: 1.8;
 }
 
-.apply-btn {
-  margin-top: 60px;
-  padding: 16px 40px;
-  border: none;
-  border-radius: 50px;
-  background: #1f1f1f;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
+/* =================================
+   WHY CAMPDAVID
+================================= */
+
+.why-campdavid {
+  padding: 80px 8%;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  background: #eef7fc;
+}
+
+.why-content {
+  flex: 1;
+}
+
+.why-content h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.why-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-content li {
+  margin-bottom: 18px;
+  font-size: 1.15rem;
+  color: #555;
+}
+
+.why-image {
+  flex: 1;
+}
+
+.why-image img {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   transition: 0.4s ease;
 }
 
-.apply-btn:hover {
-  background: #333;
-  transform: translateY(-3px);
+.why-image img:hover {
+  transform: scale(1.03);
 }
 
-/* RESPONSIVE */
+/* =================================
+   STATS
+================================= */
+
+.stats-section {
+  padding: 80px 8%;
+  background: #111;
+  color: white;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+  text-align: center;
+}
+
+.stat-box {
+  padding: 30px;
+}
+
+.stat-box h2 {
+  font-size: 3rem;
+  color: #83cbfa;
+  margin-bottom: 10px;
+}
+
+.stat-box p {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+}
+
+/* =================================
+   PREMIUM CARD EFFECTS
+================================= */
+
+.mv-card,
+.step-card,
+.value-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.mv-card::after,
+.step-card::after,
+.value-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: linear-gradient(
+    90deg,
+    #83cbfa,
+    #4ba6e8,
+    #1c84d4
+  );
+
+  transform: scaleX(0);
+  transition: 0.4s ease;
+}
+
+.mv-card:hover::after,
+.step-card:hover::after,
+.value-card:hover::after {
+  transform: scaleX(1);
+}
+
+/* =================================
+   RESPONSIVE TABLET
+================================= */
 
 @media (max-width: 992px) {
 
-  .about-overlay h1 {
-    font-size: 3rem;
+  .about-container,
+  .why-campdavid {
+    flex-direction: column;
   }
 
-  .about-text h2,
-  .admission-section h2 {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .core-values h2,
+  .why-content h2 {
     font-size: 2.5rem;
-  }
-
-  .mission-vision {
-    flex-direction: column;
-  }
-
-  .steps-container {
-    flex-direction: column;
   }
 }
 
-@media (max-width: 600px) {
+/* =================================
+   MOBILE
+================================= */
 
-  .about-hero {
-    height: 60vh;
+@media (max-width: 768px) {
+
+  .core-values,
+  .why-campdavid,
+  .stats-section {
+    padding: 60px 20px;
   }
 
-  .about-overlay h1 {
-    font-size: 2.3rem;
+  .values-grid {
+    grid-template-columns: 1fr;
   }
 
-  .about-overlay p {
+  .stats-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .core-values h2,
+  .why-content h2 {
+    font-size: 2rem;
+  }
+
+  .why-content {
+    text-align: center;
+  }
+
+  .why-content li {
     font-size: 1rem;
   }
 
-  .about-content,
-  .mission-vision,
-  .admission-section {
-    padding: 70px 5%;
+  .stat-box h2 {
+    font-size: 2.5rem;
+  }
+
+  .value-card,
+  .mv-card,
+  .step-card {
+    border-radius: 20px;
+  }
+}
+
+/* =================================
+   SMALL PHONES
+================================= */
+
+@media (max-width: 480px) {
+
+  .about-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .about-text h2,
+  .admission-section h2,
+  .core-values h2,
+  .why-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text p,
+  .mv-card p,
+  .value-card p,
+  .step-card p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .stat-box h2 {
+    font-size: 2rem;
   }
 }
