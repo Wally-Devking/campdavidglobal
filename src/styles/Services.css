@@ -1,83 +1,100 @@
 /* SERVICES SECTION */
 
 .services-section {
-  padding: 40px 8%;
+  padding: 80px 8%;
   background: #f8f8f8;
   text-align: center;
 }
 
 .services-title {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
   color: #272626;
+  margin-bottom: 50px;
 }
 
 /* CARDS ROW */
+
 .services-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch;
   gap: 35px;
-  flex-wrap: nowrap;
 }
 
 /* CARD */
+
 .service-card {
   flex: 1;
+  max-width: 420px;
+
   background: #fff;
   padding: 50px 30px;
   border-radius: 25px;
+
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  transition: 
+
+  transition:
     transform 0.5s ease,
     box-shadow 0.5s ease;
-  /* cursor: pointer; */
+
   position: relative;
   overflow: hidden;
 }
 
-/* HOVER EFFECT */
+/* HOVER */
+
 .service-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
 }
 
 /* IMAGE */
+
 .service-card img {
-  width: 300px;
-  margin-bottom: 30px;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+
+  margin-bottom: 25px;
+
   transition: transform 0.5s ease;
 }
 
 .service-card:hover img {
-  transform: scale(1.08) rotate(2deg);
+  transform: scale(1.05);
 }
 
 /* TITLE */
+
 .service-card h3 {
   font-size: 1.4rem;
   font-weight: 700;
   color: #2a1717;
-  margin-bottom: 25px;
-  text-transform: none;
+  margin-bottom: 20px;
 }
 
 /* TEXT */
+
 .service-card p {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: #8c8080;
+  line-height: 1.7;
 }
 
-/* SUBTLE OVERLAY EFFECT */
+/* OVERLAY EFFECT */
+
 .service-card::before {
   content: "";
   position: absolute;
   inset: 0;
+
   background: linear-gradient(
     to bottom,
     rgba(255,255,255,0),
     rgba(0,0,0,0.02)
   );
+
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -86,37 +103,90 @@
   opacity: 1;
 }
 
-/* RESPONSIVE */
+/* =======================
+   LARGE TABLETS
+======================= */
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
+
+  .services-section {
+    padding: 70px 6%;
+  }
+
   .services-container {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .services-title {
-    font-size: 2.8rem;
-  }
-
-  .service-card h3 {
-    font-size: 1.5rem;
+  .service-card {
+    flex: 0 1 calc(50% - 20px);
   }
 }
 
-@media (max-width: 600px) {
+/* =======================
+   TABLETS
+======================= */
+
+@media (max-width: 768px) {
 
   .services-section {
-    padding: 70px 5%;
+    padding: 60px 5%;
+  }
+
+  .services-title {
+    margin-bottom: 35px;
   }
 
   .services-container {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 550px;
+    padding: 40px 25px;
+  }
+
+  .service-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .service-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* =======================
+   MOBILE
+======================= */
+
+@media (max-width: 480px) {
+
+  .services-section {
+    padding: 50px 20px;
   }
 
   .services-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .service-card {
+    padding: 35px 20px;
+    border-radius: 18px;
   }
 
   .service-card img {
-    width: 120px;
+    max-width: 140px;
+  }
+
+  .service-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
 }
